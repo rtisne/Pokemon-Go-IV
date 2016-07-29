@@ -1,9 +1,10 @@
 {"accounts" :
     {
-        "auth_service": "google/ptc",
+        "auth_service": "google",
         "username": "",
         "password": "",
         "lat": "44.83975096323507",
-        "long" : "-0.5674897789236555"
+        "long" : "-0.5674897789236555",
+        "locale" : "en"
     }
 }

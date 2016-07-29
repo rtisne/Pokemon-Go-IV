@@ -19,7 +19,6 @@ def init_config():
     return load
 
 
-pokemon_names = json.load(open("name_id.json"))
 
 
 config = init_config()
@@ -30,6 +29,9 @@ password = config['password']
 service = config['auth_service']
 lat = config['lat']
 long = config['long']
+locale = config['locale']
+
+pokemon_names = json.load(open('locales/pokemon.' + locale + '.json'))
 
 pokeapi.login(service, login_name, password, float(lat), float(long), 10)
 request = pokeapi.create_request()
